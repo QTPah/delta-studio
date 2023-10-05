@@ -1,6 +1,9 @@
 #ifndef YDS_ALLOCATOR_H
 #define YDS_ALLOCATOR_H
 
+#if defined(__MACH__)
+#include <stdlib.h>
+#else 
 #include <malloc.h>
 
 class ysAllocator {
